@@ -4,7 +4,7 @@
 @import 'https://fonts.googleapis.com/css?family=Inconsolata';
 
 @import 'dt-color.css';
-#logo{background-image:url(../img/logo/dt.png);}
+#logo{background-image:url(../img/dt.png);}
 @import '../global/geometry.css';
 @import '../global/dark.css';
 @import '../global/ahd.css';
