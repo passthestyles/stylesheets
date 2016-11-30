@@ -4,8 +4,9 @@
 @import 'https://fonts.googleapis.com/css?family=Inconsolata';
 
 @import 'dg-color.css';
-#logo{background-image:url(../img/dt.png);}
 @import '../global/geometry.css';
 @import '../global/dark.css';
 @import '../global/ahd.css';
 @import '../global/nobanner.css';
+
+#logo{background-image:url(../img/dt.png);}
