@@ -6,6 +6,6 @@
 @import 'dg-color.css';
 @import '../global/geometry.css';
 @import '../global/dark.css';
-@import '../global/ahd.css
+@import '../global/ahd.css';
 
 #logo{background-image:url(../img/dg.png);}
