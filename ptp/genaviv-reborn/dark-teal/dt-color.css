@@ -1,0 +1,24 @@
+input[type="submit"],input[type="button"]{background:#45847e}
+a.tabs__bar__link:hover{background:#45847e!important}
+a,tr.unreadpm a,.linkbox.pager a:hover,.linkbox a strong:hover,.linkbox.pager a strong:hover,li.tabs__bar__item.tabs__bar__item--active a:hover,.forum-post__heading a:hover,span.movie-tooltip__rating__title:hover, span.movie-tooltip__rating__title a:hover,#torrents a.huge-movie-list__movie__title:hover,#torrents a.huge-movie-list__movie__director:hover,#header a.new-subscriptions,div#footer p:after,#wrapper .alert-bars a,tr.inbox-message--unread td a,tr.unreadpm a,.forum_post .colhead_dark a:hover,#content .forum-post__heading a:hover{color:#70b3ab;}
+td a:hover,a[href*="torrents.php?id"],table#torrent_table a[href*="torrents.php?torrentid"] strong,#header .new-subscriptions a,.torrent_info_row .bbcode-table-guard a:hover,.torrent_info_row .linkbox a.linkbox__link:hover{color:#70b3ab}
+#userinfo_minor a:hover,#menu ul>li>a:hover{color:#70b3ab}
+.box_info .stats.nobullet li a{color:#70b3ab!important;font-weight:400}
+td.unread:before,h2 small a:hover,.huge-movie-list__movie__tag-list a:hover, .basic-movie-list__movie__rating-container a:hover, .basic-movie-list__movie__tag, .page__title a:hover, .linkbox a:hover, .torrent-info-link, .movie-tooltip__rating__title>a:hover,tbody.js-basic-movie-list__table-body a[href*="torrents.php?id"].basic-movie-list__movie__title{color:#70b3ab}
+.toggleable-search-form__toggler-container a:hover,td.unread_sticky:before,.box.filter_torrents .head a:hover, #forums .forum_post .colhead a:hover, #forums .forum-post__heading a:hover, .forum_post .colhead_dark a:hover, #inbox .box .head a:hover{color:#70b3ab}
+td.unread_locked:before{color:#70b3ab}
+td.unread_locked_sticky:before{color:#70b3ab}
+#index .sidebar .stats.nobullet a{color:#70b3ab;}
+.forum_post a{color:#70b3ab}
+.box.filter_torrents .head a:hover,.box.filter_torrents .head a:focus,.forum_post .colhead a:hover,.forum_post .colhead_dark a:focus,#inbox .box .head a:focus,#inbox .box .head a:hover{color:#70b3ab}
+#request_table .rowb td:first-of-type>a:nth-child(2n),#request_table .rowa td>a:nth-child(2n){color:#70b3ab}
+table.forum_unread .colhead_dark{border-top:5px solid #70b3ab}
+#header > #menu ul>li.active > a{color:#70b3ab}
+#header a{color:#f7f7f7}
+#header a:hover,#header a:focus{color:#70b3ab}
+#header a.username,ul#userinfo_username li a[href*="user.php?id"],#header a.user-info-bar__link.user-info-bar__link--highlighted{color:#70b3ab}
+#header a.username:hover,#header a.username:focus,ul#userinfo_username li a[href*="user.php?id"]:hover,ul#userinfo_username li a[href*="user.php?id"]:focus,#header a.user-info-bar__link.user-info-bar__link--highlighted:hover,#header a.user-info-bar__link.user-info-bar__link--highlighted:focus{color:#f7f7f7}
+#header .alertbar a{color:#70b3ab}
+tr.group td[colspan="2"] a[href*="torrents.php?id"]:hover{color:#f7f7f7}
+.ui-widget-content a:hover{color:#70b3ab!important;}
+.alert.alert--warning.text--center{background:#3b938a;color:#f7f7f7}
