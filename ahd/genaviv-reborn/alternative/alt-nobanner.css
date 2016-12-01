@@ -3,7 +3,7 @@
 @charset "UTF-8";
 @import 'https://fonts.googleapis.com/css?family=Inconsolata';
 
-@import 'alt-color.css';
+@import '../dark-gold/dg-color.css';
 @import '../global/geometry.css';
 @import '../global/dark.css';
 @import '../global/ahd.css';
