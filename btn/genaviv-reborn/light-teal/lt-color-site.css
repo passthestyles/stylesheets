@@ -1,0 +1,47 @@
+@import https://cdn.broadcasthe.net/styles/jquery/jquery-rater/rater.css;
+@namespace url(http://www.w3.org/1999/xhtml);
+#wrapper #header div#searchbars{background:rgba(0,0,0,0.6)}
+#logo{background-image:url(../img/dt.png);}
+img[src="https://cdn.broadcasthe.net/common/caticons/episode-sd.png"],img[src="https://cdn.broadcasthe.net/common/caticons/series-sd.png"]{-webkit-filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%);-moz-filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%);-o-filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%);filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%)}
+img[src="https://cdn.broadcasthe.net/common/caticons/episode-hd.png"],img[src="https://cdn.broadcasthe.net/common/caticons/series-hd.png"]{-webkit-filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%);-moz-filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%);-o-filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%);filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%);}
+img[src="https://cdn.broadcasthe.net/common/caticons/episode-hd.png"],img[src="https://cdn.broadcasthe.net/common/caticons/series-hd.png"]{-webkit-filter:hue-rotate(173deg) saturate(66%) contrast(64%) brightness(147%);-moz-filter:hue-rotate(173deg) saturate(66%) contrast(64%) brightness(147%);-o-filter:hue-rotate(173deg) saturate(66%) contrast(64%) brightness(147%);filter:hue-rotate(173deg) saturate(66%) contrast(64%) brightness(147%)}
+img[src="https://cdn.broadcasthe.net/common/caticons/episode-sd.png"],img[src="https://cdn.broadcasthe.net/common/caticons/series-sd.png"]{-webkit-filter:hue-rotate(173deg) saturate(66%) contrast(64%) brightness(147%);-moz-filter:hue-rotate(173deg) saturate(66%) contrast(64%) brightness(147%);-o-filter:hue-rotate(173deg) saturate(66%) contrast(64%) brightness(147%);filter:hue-rotate(173deg) saturate(66%) contrast(64%) brightness(147%);}
+#playbutton{background-repeat:no-repeat;background-size:16px 16px;height:16px;padding-left:16px;width:0;-webkit-filter:hue-rotate(168deg) saturate(0%) contrast(93%) brightness(129%);-moz-filter:hue-rotate(168deg) saturate(0%) contrast(93%) brightness(129%);-o-filter:hue-rotate(168deg) saturate(0%) contrast(93%) brightness(129%);filter:hue-rotate(168deg) saturate(0%) contrast(93%) brightness(129%)}
+img[src="https://cdn.broadcasthe.net/common/browsetags/download.png"]{background-image:url(../img/dnl.png);background-repeat:no-repeat;background-size:16px 16px;height:16px;padding-left:16px;width:0;-webkit-filter:hue-rotate(168deg) saturate(0%) contrast(58%) brightness(149%);-moz-filter:hue-rotate(168deg) saturate(0%) contrast(58%) brightness(149%);-o-filter:hue-rotate(168deg) saturate(0%) contrast(58%) brightness(149%);filter:hue-rotate(168deg) saturate(0%) contrast(58%) brightness(149%)}
+img[src="https://cdn.broadcasthe.net/common/browsetags/download.png"],img[src="https://cdn.broadcasthe.net/common/browsetags/report.png"],img[src="https://cdn.broadcasthe.net/common/browsetags/fast.png"],img[src="https://cdn.broadcasthe.net/common/browsetags/foreign.png"],img[src="https://cdn.broadcasthe.net/common/browsetags/new.png"],img[src="https://cdn.broadcasthe.net/common/browsetags/20x.png"],img[src="https://cdn.broadcasthe.net/common/browsetags/auto.png"]{background-color:transparent}
+img[src="https://cdn.broadcasthe.net/common/browsetags/report.png"]{-webkit-filter:hue-rotate(0deg) saturate(51%) contrast(68%) brightness(138%);-moz-filter:hue-rotate(0deg) saturate(51%) contrast(68%) brightness(138%);-o-filter:hue-rotate(0deg) saturate(51%) contrast(68%) brightness(138%);filter:hue-rotate(0deg) saturate(51%) contrast(68%) brightness(138%);}
+img[src="https://cdn.broadcasthe.net/common/browsetags/new.png"]{-webkit-filter:hue-rotate(178deg) saturate(70%) contrast(58%) brightness(149%);-moz-filter:hue-rotate(178deg) saturate(70%) contrast(58%) brightness(149%);-o-filter:hue-rotate(178deg) saturate(70%) contrast(58%) brightness(149%);filter:hue-rotate(178deg) saturate(70%) contrast(58%) brightness(149%)}
+img[src="https://cdn.broadcasthe.net/common/browsetags/fast.png"]{-webkit-filter:hue-rotate(184deg) saturate(44%) contrast(78%) brightness(151%);-moz-filter:hue-rotate(184deg) saturate(44%) contrast(78%) brightness(151%);-o-filter:hue-rotate(184deg) saturate(44%) contrast(78%) brightness(151%);filter:hue-rotate(184deg) saturate(44%) contrast(78%) brightness(151%)}
+img[src="https://cdn.broadcasthe.net/common/browsetags/auto.png"]{-webkit-filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%);-moz-filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%);-o-filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%);filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%)}
+img[src="https://cdn.broadcasthe.net/common/browsetags/foreign.png"]{-webkit-filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%);-moz-filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%);-o-filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%);filter:hue-rotate(168deg) saturate(38%) contrast(58%) brightness(149%)}
+img[src="https://cdn.broadcasthe.net/common/browsetags/20x.png"]{-webkit-filter:hue-rotate(181deg) saturate(18%) contrast(69%) brightness(149%);-moz-filter:hue-rotate(181deg) saturate(18%) contrast(69%) brightness(149%);-o-filter:hue-rotate(181deg) saturate(18%) contrast(69%) brightness(149%);filter:hue-rotate(181deg) saturate(18%) contrast(69%) brightness(149%)}
+body .small-star a:active,body .small-star a:focus,body .small-star a:hover{-webkit-filter:hue-rotate(151.5deg) saturate(58.6%) brightness(198%);-moz-filter:hue-rotate(151.5deg) saturate(58.6%) brightness(198%);-o-filter:hue-rotate(151.5deg) saturate(58.6%) brightness(198%);filter:hue-rotate(151.5deg) saturate(58.6%) brightness(198%);background-position:left -10px}
+#menu ul > li > ul > li > a{border-bottom:1px solid #2b2b2b}
+#menu ul > li > ul > li > a:hover{background:#111}
+ul > li > ul{background:#262626;}
+td.group.discog{background:#d0d0d0}
+ul.stats.nobullet object,ul.stats.nobullet embed{background:transparent}
+#series .torrent_table td{border-bottom:1px solid #c5c5c5;}
+div.star-rating{-webkit-filter:hue-rotate(134deg) saturate(25%) brightness(200%);-moz-filter:hue-rotate(134deg) saturate(25%) brightness(100%);-o-filter:hue-rotate(134deg) saturate(25%) brightness(200%);filter:hue-rotate(134deg) saturate(25%) brightness(100%)}
+.alertbar{background:#222}
+div[style="height:140px; max-height:140px;max-width:758px;"],#torrents #content .thin h2 a{background:#D0D0D0}
+.contenth,.bbcode-btntoolbar,div.bbcode-smileys,.b2bh, .b3bh, .b4bh,.b1h,.b1h, .b2h, .b3h, .b4h, .b2bh, .b3bh, .b4bh,.headh{background:#D0D0D0!important;background-color:#D0D0D0!important;border-color:transparent!important}
+#slider .scrollContainer .tvshows .head.colhead,#slider .profile .head.colhead,#slider .info .head.colhead{color:inherit;}
+#wrapper div.contenth textarea{background:#b5b5b5;background-color:#b5b5b5;}
+.alertbar.blend{background-color:#222;border:1px solid #222}
+.alertbar{background:linear-gradient(#222,#222)!important;max-height:25px;height:25px}
+.alertbar a[href="news.php"]{background:linear-gradient(#222,#222)}
+.alertbar[style="border:1px solid #9A5050 !important;background-color:#4A0000 !important;margin-bottom:3px !important;color:#CCC !important;"],.alertbar[style="border:1px solid #32506e !important;background-color:#00254A !important;margin-bottom:3px !important;color:#CCC !important;"]{background:inherit}
+.alertbar[style="border:1px solid #9A5050 !important;background-color:#4A0000 !important;margin-bottom:3px !important;color:#CCC !important;"] a+a,.alertbar[style="border:1px solid #32506e !important;background-color:#00254A !important;margin-bottom:3px !important;color:#CCC !important;"] a+a{background:initial}
+div#alerts:after{border:1px solid #222;border-bottom:3px solid #222;width:100%;display:none}
+#donation div#DonInfo{color:#9a9a9a;}
+div#DonInfo a{color:#f7f7f7!important}
+ul.navigation,.save_message{background:#5aada5}
+#slider{background:#D0D0D0}
+.group.discog:after{border-bottom:2px solid #b5b5b5}
+.tvshows .head.colhead,.profile .head.colhead,.info .head.colhead{color:#313131}
+#user td,ul.navigation a.selected{background:#d0d0d0;background-color:#d0d0d0!important}
+tr.forum_group_header td{background:transparent;}
+div[style="height:140px; max-height:140px;max-width:758px;"],#torrents #content .thin h2 a{background:#d0d0d0}
+img[title="Unread"]{background-image:url(../img/unread-btn.png);background-repeat:no-repeat;background-size:20px 20px;height:20px;padding-left:20px;width:0}
+img[title="Read"]{background-image:url(../img/read-btn.png);background-repeat:no-repeat;background-size:20px 20px;height:20px;padding-left:20px;width:0}
