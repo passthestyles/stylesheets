@@ -6,7 +6,7 @@
 @import 'dt-color.css';
 @import '../global/geometry.css';
 @import '../global/dark.css';
-@import '../global/ahd.css';
+@import '../global/ptp.css';
 @import '../global/nobanner.css';
 
 .site-logo{background-image:url(../img/dt.png);}
