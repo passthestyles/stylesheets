@@ -1,0 +1,4 @@
+div#logo{width:138px;height:70px;margin:0 auto;}
+div#logo a{display:block;width:138px;height:70px;margin:0 auto}
+#header #logo{margin-top:10px;margin-bottom:10px}
+.autocomplete-suggestion{padding:5px}
