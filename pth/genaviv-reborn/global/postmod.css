@@ -1,2 +1,2 @@
-div#logo{width:138px;height:70px;margin:0 auto;background-size:initial;}
+div#logo{width:138px;height:70px;margin:0 auto;background-size:contain;}
 div#logo a{display:block;width:138px;height:70px;margin:0 auto}
