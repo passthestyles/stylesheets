@@ -1,11 +1,11 @@
 /*!
  * Theme Name:      Dark Cornflower Caviar
- * Version:         1.0
- * Last Updated:    1 December 2016
+ * Version:         1.1
+ * Last Updated:    9 December 2016
  * Forum Thread:    /forums.php?action=viewthread&threadid=21795
  */
 /* External fonts */
-@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i|Roboto+Mono:400,400i,700,700i");
 /* Base */
 * {
   margin: 0;
@@ -222,15 +222,39 @@ tbody {
 
 body blockquote,
 body pre {
-  margin: 1em 0 ;
-  padding: 1em ;
+  margin: 7px 0 ;
+  padding: 14px ;
   border: 1px dashed #404040 ;
   color: #8c8c8c;
   background-color: #212121;
 }
 
-pre {
+pre,
+.code {
+  margin: 7px 0 ;
+  padding: 14px ;
+  border: 1px dashed #404040 ;
+  color: #8c8c8c;
+  background-color: #212121;
   white-space: pre-wrap;
+  font-family: "Roboto Mono", monospace;
+  font-size: 0.92857em;
+}
+pre br,
+.code br {
+  display: none;
+}
+pre pre,
+pre .code,
+.code pre,
+.code .code {
+  font-size: inherit;
+}
+
+blockquote + br,
+pre + br,
+.code + br {
+  display: none;
 }
 
 span.size1 {
@@ -363,11 +387,11 @@ ul.thin li {
   text-align: center;
   padding: 10px;
   clear: both;
-  background-image: url("https://i.imgur.com/FO4cI1V.png");
+  background-image: url("https://i.imgur.com/Cy4LEaG.png");
   background-size: 0;
 }
 #footer > p:first-of-type::after {
-  content: " - Stylesheet: Dark Cornflower Caviar v1.0";
+  content: " - Stylesheet: Dark Cornflower Caviar v1.1";
   font-weight: 900;
 }
 #footer a {
@@ -759,7 +783,7 @@ body#blog #quickreplypreview {
 #userinfo_major,
 #userinfo_username {
   display: inline-block;
-  font-size: 0.75em;
+  font-size: .75em;
   font-weight: 700;
 }
 #userinfo_major a,
@@ -1013,7 +1037,7 @@ li.potato-menu-has-vertical:nth-of-type(7) .potato-menu-group .potato-menu-item 
   background: linear-gradient(to right, #10293c, #133046, #15364f, #183d59, #1a4362, #1d4a6c, #1f5075);
   text-align: center;
   color: #bfbfbf;
-  font-size: 80%;
+  font-size: .8em;
   margin: 2px 0;
   padding: 9px 0;
   vertical-align: middle;
@@ -2064,11 +2088,6 @@ div.user_details {
   border-top: 4px solid #2e76ad;
 }
 
-blockquote + br,
-blockquote + br + br {
-  display: none;
-}
-
 body#userhistory .forum_post .colhead_dark span[style="color: red;"] {
   float: right;
 }
@@ -2094,7 +2113,7 @@ body#forums form .cat_list {
   font-weight: 300;
 }
 body#forums form .cat_list strong {
-  font-size: 120%;
+  font-size: 1.2em;
 }
 body#forums form .cat_list tr:nth-child(n+2) td[colspan="5"] {
   padding-top: 1.2em;
@@ -2360,6 +2379,7 @@ body#user #section1 > .profile > .pad {
   width: 380px;
 }
 
+/* Inboxes */
 body#inbox #content > .thin > .box.pad,
 body#staffpm #content > .thin > .box.pad {
   padding: 0;
@@ -2372,6 +2392,14 @@ body#staffpm #content > .thin > .box.pad input[type="submit"] {
 body#inbox .head,
 body#staffpm .head {
   margin-right: -10px;
+}
+
+body#inbox #quickreplypreview {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  min-height: 212px;
+  padding: 16px 10px !important;
 }
 
 form[action="inbox.php"] .box.pad.center {
@@ -2389,14 +2417,6 @@ form[action="inbox.php"] textarea[name="body"] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-body#inbox #quickreplypreview {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  min-height: 212px;
-  padding: 16px 10px !important;
 }
 
 tr.unreadpm {
@@ -3199,7 +3219,7 @@ body#actor .sidebar > .box > table tr:first-child {
   color: #8c8c8c;
 }
 body#actor .sidebar > .box > table tr:nth-child(n+2) {
-  font-size: 80%;
+  font-size: .8em;
   background-color: #212121;
 }
 body#actor .sidebar > .box > table tr:nth-child(n+2) td {
@@ -4332,8 +4352,8 @@ div.contenth[style="color: #000;"] .lp-disable-search[style="background: #222222
 }
 
 div[style="margin-top:5px; padding:5px; border: 1px solid #333;"] {
-  margin: 1em 0 !important;
-  padding: 1em !important;
+  margin: 7px 0 !important;
+  padding: 14px !important;
   border: 1px dashed #404040 !important;
   color: #8c8c8c;
   background-color: #212121;
