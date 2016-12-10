@@ -1,0 +1,41 @@
+.tp-banner, .tp-banner img{width:170px;max-width:170px;}
+.torrent_table.grouped.release_table .group strong,.torrent_table.grouped .group strong,.grouped .release_table .group strong{font-weight:400}
+div#logo{width:66px;height:66px;margin:0 auto;background-size:66px 66px}
+div#logo a{display:block;width:66px;height:66px;margin:0 auto}
+#header #logo{margin-top:10px;margin-bottom:10px}
+#header{background-image:url(../img/global.jpg);}
+div.tp-banner img[src*="mtv_red_gloss"],,div.tp-banner img[src*="default"]{background:transparent;background-color:transparent;}
+div.tp-banner img[src*="mtv_red_gloss"],div.tp-banner img[src*="default"]{background-image:url(../img/no-image-mtv.png);background-repeat:no-repeat;background-size:170px 35px;height:50px;padding-left:170px;width:0}
+#covers>div,#covers{margin-bottom:0}
+#torrents table#torrent_table td{padding-right:0!important}
+#torrents table#torrent_table td:last-child{padding-right:5px!important}
+.hide_torrents{width:10px;height:28px!important;background-size:10px 10px!important}
+.show_torrents{width:10px;height:28px!important;background-size:10px 10px!important}
+span.flag_sticky,span.flag_fast,span.flag_internal,span.mtv_report,span.mtv_download{margin-right:2px}
+.cats_tv{background-image:url(../img/mtv-sd-tv.png);}
+.cats_movies{background-image:url(../img/mtv-sd-movies.png);}
+.cats_icon_hd_movies{background-image:url(../img/mtv-hd-movies.png);}
+.cats_icon_hd_tv{background-image:url(../img/mtv-hd-tv.png);}
+.group_info.group_info2.clear a[href*="torrents.php?id"]{white-space:normal;word-break:break-all;word-wrap:break-word;}
+span.flag_sticky:before{content:"\f176";font-family:FontAwesome;}
+span.flag_fast:before{content:"\f0e7";font-family:FontAwesome;}
+span.flag_internal:before{content:"\f219";font-family:FontAwesome;}
+.mtv_report:before{content:"[RP]"}
+.mtv_download:before{content:"[DL]"}
+span.flag_internal,span.flag_fast,span.flag_sticky,span.mtv_report,span.mtv_download{background:none;background-size:inherit;background-position:top left;background-repeat:no-repeat;width:inherit;height:inherit;padding:0}
+.cats_tv,.cats_movies,.cats_icon_hd_movies,.cats_icon_hd_tv{width:50px;height:50px;display:block;background-size:50px;float:left;padding:0}
+div.tp-banner{width:170px;margin-top:0.46878rem}
+#torrents table#torrent_table td.big_info{padding-left:0}
+.group_info.group_info2.clear{position:relative;}
+div#artist_information img.scale_image{max-width:150px;margin-top:10px}
+div#artist_information span[style="font-style: italic;"]{font-style:normal!important}
+div#artist_information span.size4{font-size:1.2rem}
+.tp-banner a{height:35px;display:block;width:170px;position:absolute;top:0;left:0;padding-left:170px}
+#torrents table#torrent_table td.cats_col{min-width:244px;width:244px}
+td.sign.snatches,td.sign.seeders,td.sign.leechers,td.sign.snatches a,td.sign.seeders a,td.sign.leechers a{width:15px;height:15px;max-height:15px;max-width:15px;}
+td.sign.snatches a,td.sign.seeders a,td.sign.leechers a{background-repeat:no-repeat;background-position:center center;}
+td.sign.snatches img,td.sign.seeders img,td.sign.leechers img{display:none;}
+td.sign.snatches a{background:url(../img/snatch.png) no-repeat center center;width:15px;height:15px;max-height:15px;max-width:15px;background-size:15px 15px;display:inline-block;}
+td.sign.seeders a{background:url(../img/seed.png) no-repeat center center;width:15px;height:15px;max-height:15px;max-width:15px;background-size:11px 15px;display:inline-block;}
+td.sign.leechers a{background:url(../img/leech.png) no-repeat center center;width:15px;height:15px;max-height:15px;max-width:15px;background-size:11px 15px;display:inline-block;}
+div#footer>p:first-child:after{content:" | GenavivReborn (by Sarek)"}
