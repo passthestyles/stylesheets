@@ -1,0 +1,4 @@
+@import 'dg.css';
+@import '../global/wcd.css';
+
+#logo{background:url(../img/dg-wcd.png) no-repeat;background-size:contain;}
