@@ -1,7 +1,7 @@
 /*!
  * Theme Name:      Mint Caviar
- * Version:         1.2
- * Last Updated:    25 December 2016
+ * Version:         1.3
+ * Last Updated:    25 February 2017
  * Forum Thread:    /forums.php?action=viewthread&threadid=21795
  */
 /* External fonts */
@@ -184,6 +184,13 @@ input[type="submit"]::-moz-focus-inner,
 input[type="reset"]::-moz-focus-inner {
   padding: 0 !important;
   border: 0 none !important;
+}
+button[disabled],
+input[type="button"][disabled],
+input[type="submit"][disabled],
+input[type="reset"][disabled] {
+  pointer-events: none;
+  opacity: 0.5;
 }
 
 select {
@@ -391,11 +398,11 @@ ul.thin li {
   text-align: center;
   padding: 10px;
   clear: both;
-  background-image: url("https://i.imgur.com/G8ppHJv.png");
+  background-image: url("https://i.imgur.com/NS12XtX.png");
   background-size: 0;
 }
 #footer > p:first-of-type::after {
-  content: " - Stylesheet: Mint Caviar v1.2";
+  content: " - Stylesheet: Mint Caviar v1.3";
   font-weight: 900;
 }
 #footer a {
@@ -445,7 +452,7 @@ p.min_padding {
   background: white;
   font-weight: 700;
   font-size: 12px;
-  border-bottom: 2px double #f2f2f2;
+  border-bottom: none;
   position: relative;
   margin-top: -10px;
   margin-left: -10px;
@@ -531,7 +538,7 @@ td.body {
   background: white;
   font-weight: 700;
   font-size: 12px;
-  border-bottom: 2px double #f2f2f2;
+  border-bottom: none;
 }
 .colhead b,
 .colhead strong {
@@ -554,7 +561,7 @@ td.colhead {
   background: white;
   font-weight: 700;
   font-size: 12px;
-  border-bottom: 2px double #f2f2f2;
+  border-bottom: none;
   vertical-align: middle;
 }
 .colhead_dark b,
@@ -570,7 +577,7 @@ tbody .colhead_dark strong {
   text-decoration: underline;
 }
 .colhead, .colhead_dark {
-  border-bottom: 2px double #f2f2f2 !important;
+  border-bottom: none !important;
 }
 
 .rowa,
@@ -686,37 +693,37 @@ body#requests #quickreplypreview {
 
 /* Header */
 #logo {
-  width: 30px;
-  height: 30px;
+  margin: 12px 10px 7px;
+  display: inline-block;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
   position: relative;
   cursor: pointer;
   padding: 6px;
-  border: 4px solid #1d5869;
+  border: 3px solid #1d5869;
   background: #399ba0;
-  margin-top: 5px;
-  margin-bottom: -12px;
 }
 #logo * {
   box-sizing: border-box;
 }
 #logo::after {
   position: absolute;
-  width: 16px;
-  height: 16px;
+  width: 13px;
+  height: 13px;
   background: #399ba0;
-  left: 9px;
-  top: 9px;
+  left: 7px;
+  top: 7px;
   content: "";
   border-radius: inherit;
-  border: 4px solid #1d5869;
+  border: 3px solid #1d5869;
 }
 #logo > *:only-child {
   position: absolute;
   top: -4px;
   left: -4px;
   bottom: -4px;
-  width: 400px;
+  width: 300px;
   border-radius: 0;
   background: none;
   display: block;
@@ -725,22 +732,21 @@ body#requests #quickreplypreview {
 #logo > *:only-child::after {
   content: "";
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 9px;
   background: #399ba0;
   position: absolute;
-  left: 19px;
-  top: 12px;
+  left: 15px;
+  top: 9px;
   position: relative;
 }
 #logo > *:only-child::before {
   content: "";
   position: absolute;
-  width: 4px;
-  height: 15px;
-  background: #1d5869;
-  border-radius: 10px;
-  left: 26px;
+  width: 0;
+  height: 11px;
+  border-left: 3px solid #1d5869;
+  left: 22px;
   top: 9px;
   margin-left: -3px;
   z-index: 1;
@@ -748,9 +754,9 @@ body#requests #quickreplypreview {
 #logo::before {
   position: absolute;
   content: "broadcasthe.net";
-  left: 58px;
+  left: 50px;
   top: 0;
-  font-size: 35px;
+  font-size: 26px;
   font-weight: 400;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   color: white;
@@ -759,11 +765,11 @@ body#requests #quickreplypreview {
 
 #userinfo {
   position: absolute;
-  top: 5px;
-  right: 55px;
+  top: 12px;
+  right: 58px;
   width: 50%;
   text-align: right;
-  font-size: 13px;
+  font-size: 14px;
   color: #1d5869;
 }
 #userinfo ul li {
@@ -775,9 +781,10 @@ body#requests #quickreplypreview {
 }
 
 #userinfo_stats {
+  display: inline-block;
   color: #1d5869;
   font-weight: 400;
-  display: inline-block;
+  margin-top: 7px;
 }
 #userinfo_stats a {
   color: white;
@@ -791,42 +798,9 @@ body#requests #quickreplypreview {
 }
 
 #userinfo_major,
-#userinfo_username {
-  display: inline-block;
-  font-size: .75em;
-  font-weight: 700;
-}
-#userinfo_major a,
-#userinfo_username a {
-  color: white;
-  text-decoration: none;
-}
-#userinfo_major a:hover, #userinfo_major a:focus, #userinfo_major a:active,
-#userinfo_username a:hover,
-#userinfo_username a:focus,
-#userinfo_username a:active {
-  text-decoration: underline;
-}
-#userinfo_major strong,
-#userinfo_username strong {
-  font-weight: 700;
-}
-#userinfo_major .brackets::before,
-#userinfo_username .brackets::before {
-  content: "[ ";
-}
-#userinfo_major .brackets::after,
-#userinfo_username .brackets::after {
-  content: " ]";
-}
-#userinfo_major .brackets::before, #userinfo_major .brackets::after,
-#userinfo_username .brackets::before,
-#userinfo_username .brackets::after {
-  font-weight: 900;
-}
-
-#searchbutton,
+#userinfo_username,
 #userinfo_minor,
+#searchbutton,
 .hide {
   display: none;
 }
@@ -839,24 +813,24 @@ ul#twitter_update_list li a {
 #donation {
   position: absolute;
   display: inline;
-  top: 5px;
+  top: 12px;
   right: 0;
   text-align: center;
   color: white;
   z-index: 0;
-  width: 50px;
-  height: 45px;
+  width: 42px;
+  height: 37.8px;
 }
 #donation:before, #donation:after {
   position: absolute;
   content: "";
-  left: 25px;
-  top: 0;
-  width: 25px;
-  height: 40px;
+  left: 11px;
+  top: 4px;
+  width: 21px;
+  height: 34.44px;
   background: #c1151b;
-  -moz-border-radius: 25px 25px 0 0;
-  border-radius: 25px 25px 0 0;
+  -moz-border-radius: 21px 21px 0 0;
+  border-radius: 21px 21px 0 0;
   -webkit-transform: rotate(-45deg);
   -moz-transform: rotate(-45deg);
   -ms-transform: rotate(-45deg);
@@ -869,7 +843,7 @@ ul#twitter_update_list li a {
   transform-origin: 0 100%;
 }
 #donation:after {
-  left: 0;
+  left: -10px;
   -webkit-transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -884,10 +858,9 @@ ul#twitter_update_list li a {
 
 body div#DonInfo {
   position: relative;
-  top: -3px;
   width: 50px;
   height: 45px;
-  font-size: .9em;
+  font-size: .75em;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 400;
   z-index: 1;
@@ -895,10 +868,11 @@ body div#DonInfo {
 body div#DonInfo a {
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: -1px;
+  left: -10px;
   right: 0;
   bottom: 0;
+  width: 40px;
   line-height: 96px;
   margin-top: -125px;
   padding-left: 2px;
@@ -1141,7 +1115,7 @@ li.ui-state-hover {
 }
 #searchbars ul li:first-child span.hidden {
   position: absolute;
-  top: 12px;
+  top: 14px;
   left: 12px;
   width: 12px;
   height: 12px;
@@ -1345,6 +1319,29 @@ body#index .home .month_rating {
 }
 .home .sidebar {
   float: left;
+}
+
+#\31 07 {
+  font-size: 0;
+  padding: 0;
+}
+#\31 07 .head {
+  margin: 0;
+}
+#\31 07 td {
+  padding: 0;
+}
+#\31 07 td:first-child {
+  border-right: 2px solid #f2f7f7;
+}
+#\31 07 tr:last-child {
+  border-bottom: none;
+}
+#\31 07 tr:only-child td {
+  border-right: none;
+}
+#\31 07 img {
+  width: 100%;
 }
 
 /* Torrents */
@@ -1966,7 +1963,7 @@ body#reviews thead tr {
   background: white;
   font-weight: 700;
   font-size: 12px;
-  border-bottom: 2px double #f2f2f2;
+  border-bottom: none;
 }
 body#reviews thead tr b,
 body#reviews thead tr strong {
@@ -2080,6 +2077,13 @@ body#userhistory td.avatar {
   border-top: 1px solid #c5cacb;
   margin: 2em 0 0;
   padding: .5em 0 0;
+}
+
+.lastedited {
+  display: block;
+  text-align: right;
+  font-size: 0.8em;
+  font-style: italic;
 }
 
 div.user_details {
@@ -2211,6 +2215,9 @@ body ul.navigation .colhead {
 }
 .user_profile > h2:first-child a:hover, .user_profile > h2:first-child a:focus, .user_profile > h2:first-child a:active {
   color: white;
+}
+.user_profile > h2:first-child span[class^="permission_"] {
+  color: #3e4147;
 }
 
 #slider .linkbox {
@@ -2387,6 +2394,18 @@ body#user #section1 > .profile > .pad {
 #userform input[type="password"],
 #userform textarea {
   width: 380px;
+}
+
+ul .invitetree {
+  margin: 0 0 0 25px;
+}
+.invitetree li {
+  list-style: none;
+  margin: 10px 2px;
+}
+
+#invitetree {
+  padding: 10px;
 }
 
 /* Inboxes */
@@ -2714,14 +2733,6 @@ body div.contenth textarea:focus {
   text-align: right;
 }
 
-ul .invitetree {
-  margin: 0 0 0 25px;
-}
-.invitetree li {
-  list-style: none;
-  margin: 10px 2px;
-}
-
 #blog .thin > br, #news .thin > br {
   display: none;
 }
@@ -2729,10 +2740,6 @@ ul .invitetree {
 #news_post .pad {
   font-size: 14px;
   padding: 14px;
-}
-
-#invitetree {
-  padding: 10px;
 }
 
 .tickets_search {
@@ -3164,7 +3171,7 @@ body#actorshowcase .thin > table tr:first-child {
   background: white;
   font-weight: 700;
   font-size: 12px;
-  border-bottom: 2px double #f2f2f2;
+  border-bottom: none;
 }
 body#actorshowcase .thin > table tr:first-child b,
 body#actorshowcase .thin > table tr:first-child strong {
@@ -4353,7 +4360,7 @@ a:active .User {
   color: #569369 !important;
 }
 
-/* Shame - hacks go here */
+/* Shame - This CSS is bad, and you should feel bad */
 .alertbar[style='border:1px solid #32506e !important;background-color:#00254A !important;margin-bottom:3px !important;color:#CCC !important;'] span {
   color: white !important;
   position: relative;
@@ -4463,4 +4470,19 @@ body#torrents table.box[style="font-size: 7pt; margin-top: 5px; width: 170px"] #
 }
 body#torrents table.box[style="font-size: 7pt; margin-top: 5px; width: 170px"] #votes {
   float: left !important;
+}
+
+body#user #content > .thin > div.box.pad:nth-child(2) > p:only-child, body#user #content > .thin > div.box.pad:nth-child(3) > p:only-child {
+  padding: 14px;
+}
+body#user #content > .thin > form[action="user.php"] td {
+  padding: 10px;
+}
+body#user #content > .thin > form[action="user.php"] td.label + td > textarea,
+body#user #content > .thin > form[action="user.php"] td.label + td > input[type="text"] {
+  width: 662px !important;
+}
+
+body#snatchlist #SnatchData > table:nth-child(3) td:only-child {
+  padding: 14px;
 }
