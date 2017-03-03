@@ -1,0 +1,13 @@
+/**
+Galaxies was originally made by Ampersand for Bb, and was tweaked to fit AHD
+**/
+@import url(galaxies.css);
+
+#logo {
+	position: relative;
+	top: 30px;
+	background: url('img/galaxies-logo.png') top left no-repeat !important;
+	width: 376px;
+	height: 61px;
+	margin: 0 auto 15px auto;
+}
