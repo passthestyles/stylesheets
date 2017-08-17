@@ -9,6 +9,17 @@ Profile: http://passthepopcorn.me/user.php?id=53284
 
 Modifications by jaesun
 -Added height: auto; to forum-post__avatar__image{}
+
+Komic was here too
+-Fonts are now served from jsDelivr
+-[hide] blocks now aren't hidden once expanded
+-Fixed [img] elements being really limited in size for some reason
+-Fixed description previews on upload.php
+-Fixed new profile layout
+-Fixed upcoming.php
+-Fixed huge user titles breaking everything
+-Fixed that poor popcorn guy on Top/Bottom 250 movies
+
 Stylesheet url: https://passthestyles.github.io/stylesheets/ptp/marcel/marcel.css
 ------------------------------------------------------------------------------------------------- */
 
@@ -16,7 +27,115 @@ Stylesheet url: https://passthestyles.github.io/stylesheets/ptp/marcel/marcel.cs
     IMPORT WEBFONTS
 ------------------------------------- */
 
-@import url(//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Hairline.eot');
+  src: local('Lato Hairline'), local('Lato-Hairline'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Hairline.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Hairline.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Hairline.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 100;
+  src: url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-HairlineItalic.eot');
+  src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-HairlineItalic.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-HairlineItalic.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-HairlineItalic.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/lato-v13-latin-300.eot');
+  src: local('Lato Light'), local('Lato-Light'),
+       url('../fonts/lato-v13-latin-300.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lato-v13-latin-300.woff') format('woff'),
+       url('../fonts/lato-v13-latin-300.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Light.eot');
+  src: local('Lato Light Italic'), local('Lato-LightItalic'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Light.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Light.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Light.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/lato-v13-latin-regular.eot');
+  src: local('Lato Regular'), local('Lato-Regular'),
+       url('../fonts/lato-v13-latin-regular.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/lato-v13-latin-regular.woff') format('woff'),
+       url('../fonts/lato-v13-latin-regular.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Italic.eot');
+  src: local('Lato Italic'), local('Lato-Italic'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Italic.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Italic.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Italic.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Bold.eot');
+  src: local('Lato Bold'), local('Lato-Bold'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Bold.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Bold.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Black.eot');
+  src: local('Lato Black'), local('Lato-Black'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Black.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Black.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Black.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-BoldItalic.eot');
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-BoldItalic.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-BoldItalic.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-BoldItalic.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-BlackItalic.eot');
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-BlackItalic.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-BlackItalic.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-BlackItalic.ttf') format('truetype'),
+}
 
 @font-face {
   font-family: 'FontAwesome';
@@ -24,6 +143,17 @@ Stylesheet url: https://passthestyles.github.io/stylesheets/ptp/marcel/marcel.cs
   src: url('fontawesome-webfont.eot?#iefix&v=4.3.0') format('embedded-opentype'), url('fontawesome-webfont.woff2?v=4.3.0') format('woff2'), url('fontawesome-webfont.woff?v=4.3.0') format('woff'), url('fontawesome-webfont.ttf?v=4.3.0') format('truetype'), url('fontawesome-webfont.svg?v=4.3.0#fontawesomeregular') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  src: url('https://cdn.jsdelivr.net/fontawesome/4.7.0/fonts/fontawesome-webfont.eot');
+  src: local('FontAwesome'), local('Font-Awesome'),
+       url('https://cdn.jsdelivr.net/fontawesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/fontawesome/4.7.0/fonts/fontawesome-webfont.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/fontawesome/4.7.0/fonts/fontawesome-webfont.ttf') format('truetype'),
 }
 
 .fa,
@@ -252,10 +382,10 @@ blockquote {
 .huge-movie-list__movie__ratings__votes-column
 {color: transparent;}
 
-.spoiler
+span .spoiler
 {background: #1a1a1a !important; color: transparent !important;}
 
-.spoiler:hover
+span .spoiler:hover
 {background: transparent !important; color: inherit !important;}
 
 /* -------------------------------------
@@ -868,6 +998,7 @@ img#browse_settings {
 .panel__body {
     padding: 15px;
     margin-bottom: 20px;
+    overflow-wrap: break-word;
 }
 
 .table--bordered>tbody>tr>td {
@@ -1086,7 +1217,7 @@ th {
 }
 
 .bbcode__image {
-    max-width: 630px;
+    max-width: 100%;
 }
 
 .sidebar .bbcode__image {
@@ -1592,7 +1723,7 @@ html.busy-cursor, html.busy-cursor * {
 }
 
 .release-description-preview {
-    background-color: #e2dcc8;
+    background-color: #373737;
     padding: 10px;
 }
 
@@ -1909,6 +2040,31 @@ html.busy-cursor, html.busy-cursor * {
     display: block;
 }
 
+.small-cover-movie-list__movie__title {
+    text-align: center;
+}
+
+.small-cover-movie-list__movie__title:before {
+    content: "ðŸ†";
+    margin-right: 3px;
+}
+
+.small-cover-movie-list__movie__link--smaller {
+    width: 125px;
+    height: 187px;
+    margin: 6px;
+    margin-bottom: 6px;
+}
+
+.small-cover-movie-list__movie__link--smaller + .small-cover-movie-list__movie__title {
+    margin-top: -6px;
+    padding-bottom: 3px;
+}
+
+.cover-movie-list {
+    display: flow-root;
+}
+
 .staff-toolbar {
     margin-left: auto;
     margin-right: auto;
@@ -2100,6 +2256,19 @@ html.busy-cursor, html.busy-cursor * {
     margin-bottom: 5px;
 }
 
+.user_title {
+    display: inline-block;
+    vertical-align: -3px;
+    max-width: 315px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: "â€¦)";
+}
+
+.user_title img {
+    max-height: 15px;
+}
+
 .wiki__diff--added {
     color: green;
     background: #dfd;
@@ -2182,6 +2351,24 @@ p:first-child, .alert:first-child, .heading:first-child {
     background: #ddd;
 }
 
+#general > .panel .panel__heading .panel__heading__title {
+    display: none;
+}
+
+#top250 img {
+    max-width: unset;
+    padding-right: 5px;
+}
+
+#bottom250 img {
+    max-width: unset;
+    padding-right: 5px;
+}
+
+.forum-post__heading .username {
+    margin-right: 3px;
+}
+
 /* =============================================================================
     RESPONSIVE LAYOUT
 ============================================================================= */
@@ -2190,7 +2377,6 @@ p:first-child, .alert:first-child, .heading:first-child {
     min-width 1280px, large screens
 ----------------------------------------------- */
 @media only screen and (min-width: 1280px) {
-
     .page__main-content,
     .alert-bars
     {
@@ -2209,6 +2395,11 @@ p:first-child, .alert:first-child, .heading:first-child {
         height: 308px;
     }
 
+    .small-cover-movie-list__movie__link--smaller {
+        width: 156px;
+        height: 234px;
+    }
+
     .cover-movie-list__movie__undercover {
         font-size: 1.4rem;
     }
@@ -2217,6 +2408,9 @@ p:first-child, .alert:first-child, .heading:first-child {
         font-size: 1.3rem;
     }
 
+    .user_title {
+        max-width: 623px;
+    }
 }
 
 /* ------------------------ I think this just might be my masterpiece --------------------------- */
