@@ -1347,7 +1347,7 @@ th {
 }
 
 .forum-post__heading {
-    padding: 7px;
+    padding: 7px 7px 4px 7px;
     border-bottom-width: 2px;
     border-bottom-style: solid;
 }
@@ -1675,7 +1675,7 @@ html.lightbox__scroll-lock {
 }
 
 .main-menu__list {
-    margin: 0;
+    margin: 2px 0 0 0;
     padding: 0;
 }
 
