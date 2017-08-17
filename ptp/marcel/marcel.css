@@ -27,144 +27,164 @@ Stylesheet url: https://passthestyles.github.io/stylesheets/ptp/marcel/marcel.cs
     IMPORT WEBFONTS
 ------------------------------------- */
 
+/* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 100;
-  src: local('Lato Hairline'), local('Lato-Hairline'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatinHair-Regular.woff) format('woff');
+  src: local('Lato Hairline'), local('Lato-Hairline'), url('fonts/LatoExt-Hairline.woff2') format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+/* latin */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 100;
-  src: local('Lato Hairline'), local('Lato-Hairline'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Hairline.woff) format('woff');
+  src: local('Lato Hairline'), local('Lato-Hairline'), url('fonts/Lato-Hairline.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+/* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatinLight-Regular.woff) format('woff');
+  src: local('Lato Light'), local('Lato-Light'), url('fonts/LatoExt-Light.woff2') format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+/* latin */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: local('Lato Light'), local('Lato-Light'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Light.woff) format('woff');
+  src: local('Lato Light'), local('Lato-Light'), url('fonts/Lato-Light.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+/* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatin-Regular.woff) format('woff');
+  src: local('Lato Regular'), local('Lato-Regular'), url('fonts/LatoExt-Regular.woff2') format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+/* latin */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: local('Lato Regular'), local('Lato-Regular'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Regular.woff) format('woff');
+  src: local('Lato Regular'), local('Lato-Regular'), url('fonts/Lato-Regular.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+/* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatin-Bold.woff) format('woff');
+  src: local('Lato Bold'), local('Lato-Bold'), url('fonts/LatoExt-Bold.woff2') format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+/* latin */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local('Lato Bold'), local('Lato-Bold'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatin-Bold.woff) format('woff');
+  src: local('Lato Bold'), local('Lato-Bold'), url('fonts/Lato-Bold.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+/* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: local('Lato Black'), local('Lato-Black'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatinBlack-Regular.woff) format('woff');
+  src: local('Lato Black'), local('Lato-Black'), url('fonts/LatoExt-Black.woff2') format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+/* latin */
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: local('Lato Black'), local('Lato-Black'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Black.woff) format('woff');
+  src: local('Lato Black'), local('Lato-Black'), url('fonts/Lato-Black.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+/* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 100;
-  src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatinHair-Italic.woff) format('woff');
+  src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url('fonts/LatoExt-HairlineItalic.woff2') format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+/* latin */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 100;
-  src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-HairlineItalic.woff) format('woff');
+  src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url('fonts/Lato-HairlineItalic.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+/* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 300;
-  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatinLight-Italic.woff) format('woff');
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url('fonts/LatoExt-LightItalic.woff2') format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+/* latin */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 300;
-  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-LightItalic.woff) format('woff');
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url('fonts/Lato-LightItalic.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+/* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatin-Italic.woff) format('woff');
+  src: local('Lato Italic'), local('Lato-Italic'), url('fonts/LatoExt-Italic.woff2') format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+/* latin */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 400;
-  src: local('Lato Italic'), local('Lato-Italic'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Italic.woff) format('woff');
+  src: local('Lato Italic'), local('Lato-Italic'), url('fonts/Lato-Italic.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+/* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatin-BoldItalic.woff) format('woff');
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url('fonts/LatoExt-BoldItalic.woff2') format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+/* latin */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 700;
-  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-BoldItalic.woff) format('woff');
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url('fonts/Lato-BoldItalic.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
+/* latin-ext */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 900;
-  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatinBlack-Italic.woff) format('woff');
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url('fonts/LatoExt-BlackItalic.woff2') format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
 }
+/* latin */
 @font-face {
   font-family: 'Lato';
   font-style: italic;
   font-weight: 900;
-  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-BlackItalic.woff) format('woff');
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url('fonts/Lato-BlackItalic.woff2') format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 @font-face {
@@ -1347,7 +1367,7 @@ th {
 }
 
 .forum-post__heading {
-    padding: 7px 7px 4px 7px;
+    padding: 7px;
     border-bottom-width: 2px;
     border-bottom-style: solid;
 }
@@ -1675,7 +1695,7 @@ html.lightbox__scroll-lock {
 }
 
 .main-menu__list {
-    margin: 2px 0 0 0;
+    margin: 0;
     padding: 0;
 }
 
