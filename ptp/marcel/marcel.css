@@ -2063,7 +2063,7 @@ html.busy-cursor, html.busy-cursor * {
 }
 
 .small-cover-movie-list__movie__title:before {
-    content: "ðŸ†";
+    content: "🏆";
     margin-right: 3px;
 }
 
@@ -2280,7 +2280,7 @@ html.busy-cursor, html.busy-cursor * {
     max-width: 315px;
     white-space: nowrap;
     overflow: hidden;
-    text-overflow: "â€¦)";
+    text-overflow: "…)";
 }
 
 .user_title img {
