@@ -53,19 +53,8 @@ Stylesheet url: https://passthestyles.github.io/stylesheets/ptp/marcel/marcel.cs
   font-family: 'Lato';
   font-style: normal;
   font-weight: 300;
-  src: url('../fonts/lato-v13-latin-300.eot');
-  src: local('Lato Light'), local('Lato-Light'),
-       url('../fonts/lato-v13-latin-300.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/lato-v13-latin-300.woff') format('woff'),
-       url('../fonts/lato-v13-latin-300.ttf') format('truetype'),
-}
-
-@font-face {
-  font-family: 'Lato';
-  font-style: italic;
-  font-weight: 300;
   src: url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Light.eot');
-  src: local('Lato Light Italic'), local('Lato-LightItalic'),
+  src: local('Lato Light'), local('Lato-Light'),
        url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Light.eot?#iefix') format('embedded-opentype'),
        url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Light.woff') format('woff'),
        url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Light.ttf') format('truetype'),
@@ -73,13 +62,24 @@ Stylesheet url: https://passthestyles.github.io/stylesheets/ptp/marcel/marcel.cs
 
 @font-face {
   font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-LightItalic.eot');
+  src: local('Lato Light Italic'), local('Lato-LightItalic'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-LightItalic.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-LightItalic.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-LightItalic.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
-  src: url('../fonts/lato-v13-latin-regular.eot');
+  src: url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Regular.eot');
   src: local('Lato Regular'), local('Lato-Regular'),
-       url('../fonts/lato-v13-latin-regular.eot?#iefix') format('embedded-opentype'),
-       url('../fonts/lato-v13-latin-regular.woff') format('woff'),
-       url('../fonts/lato-v13-latin-regular.ttf') format('truetype'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Regular.woff') format('woff'),
+       url('https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Regular.ttf') format('truetype'),
 }
 
 @font-face {
