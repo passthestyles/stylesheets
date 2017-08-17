@@ -9,7 +9,6 @@ Profile: http://passthepopcorn.me/user.php?id=53284
 
 Modifications by jaesun
 -Added height: auto; to forum-post__avatar__image{}
--Reverted Fonts back from Komic
 
 Komic was here too
 -Fonts are now served from jsDelivr
@@ -28,14 +27,151 @@ Stylesheet url: https://passthestyles.github.io/stylesheets/ptp/marcel/marcel.cs
     IMPORT WEBFONTS
 ------------------------------------- */
 
-@import url(//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
-
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatinHair-Regular.woff) format('woff');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Lato Hairline'), local('Lato-Hairline'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Hairline.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatinLight-Regular.woff) format('woff');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Light.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatin-Regular.woff) format('woff');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Regular.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatin-Bold.woff) format('woff');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatin-Bold.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatinBlack-Regular.woff) format('woff');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Black.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatinHair-Italic.woff) format('woff');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 100;
+  src: local('Lato Hairline Italic'), local('Lato-HairlineItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-HairlineItalic.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatinLight-Italic.woff) format('woff');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 300;
+  src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-LightItalic.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatin-Italic.woff) format('woff');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-Italic.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatin-BoldItalic.woff) format('woff');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-BoldItalic.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/LatoLatin/LatoLatinBlack-Italic.woff) format('woff');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 900;
+  src: local('Lato Black Italic'), local('Lato-BlackItalic'), url(https://cdn.jsdelivr.net/font-lato/2.0/Lato/Lato-BlackItalic.woff) format('woff');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
 @font-face {
   font-family: 'FontAwesome';
-  src: url('fontawesome-webfont.eot?jv=4.3.0');
-  src: url('fontawesome-webfont.eot?#iefix&jv=4.3.0') format('embedded-opentype'), url('fontawesome-webfont.woff2?jv=4.3.0') format('woff2'), url('fontawesome-webfont.woff?jv=4.3.0') format('woff'), url('fontawesome-webfont.ttf?jv=4.3.0') format('truetype'), url('fontawesome-webfont.svg?jv=4.3.0#fontawesomeregular') format('svg');
   font-style: normal;
   font-weight: normal;
+  src: local('FontAwesome'), local('Font-Awesome'), local('Font Awesome'), url(https://cdn.jsdelivr.net/fontawesome/4.7.0/fonts/fontawesome-webfont.woff) format('woff');
 }
 
 .fa,
@@ -2140,7 +2276,7 @@ html.busy-cursor, html.busy-cursor * {
 
 .user_title {
     display: inline-block;
-    vertical-align: -3px;
+    vertical-align: -5px;
     max-width: 315px;
     white-space: nowrap;
     overflow: hidden;
@@ -2249,6 +2385,10 @@ p:first-child, .alert:first-child, .heading:first-child {
 
 .forum-post__heading .username {
     margin-right: 3px;
+}
+
+.forum-post__heading strong img {
+    vertical-align: -1px;
 }
 
 /* =============================================================================
