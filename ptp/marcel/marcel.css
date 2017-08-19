@@ -1705,7 +1705,7 @@ html.lightbox__scroll-lock {
 }
 
 .main-menu__link, .main-menu__link:hover {
-    padding: 10px;
+    padding: 12px;
 }
 
 .mediainfo {
@@ -2452,6 +2452,12 @@ p:first-child, .alert:first-child, .heading:first-child {
 
     .user_title {
         max-width: 623px;
+    }
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .main-menu__list {
+        line-height: 21px;
     }
 }
 
