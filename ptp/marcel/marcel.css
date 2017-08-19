@@ -2435,4 +2435,10 @@ p:first-child, .alert:first-child, .heading:first-child {
     }
 }
 
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    .main-menu__list {
+        line-height: 21px;
+    }
+}
+
 /* ------------------------ I think this just might be my masterpiece --------------------------- */
