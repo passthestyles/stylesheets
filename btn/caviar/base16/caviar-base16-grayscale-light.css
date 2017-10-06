@@ -1,7 +1,7 @@
 /*!
  * Theme Name:      Caviar [base16-grayscale-light]
- * Version:         1.4
- * Last Updated:    4 March 2017
+ * Version:         1.5
+ * Last Updated:    21 June 2017
  * Forum Thread:    /forums.php?action=viewthread&threadid=21795
  */
 /* External fonts */
@@ -402,7 +402,7 @@ ul.thin li {
   background-size: 0;
 }
 #footer > p:first-of-type::after {
-  content: " - Stylesheet: Caviar [base16-grayscale-light] v1.4";
+  content: " - Stylesheet: Caviar [base16-grayscale-light] v1.5";
   font-weight: 900;
 }
 #footer a {
@@ -1259,26 +1259,6 @@ ul.poll li.graph {
 body#index .home .main_column {
   float: right;
 }
-body#index .home .main_column .of_the_month {
-  margin-left: -2px;
-}
-body#index .home .main_column .of_the_month img.toolTip {
-  margin-left: -31.6px;
-  height: 550px;
-  width: 372.5px;
-  margin-top: -6px;
-}
-body#index .home .main_column .of_the_month .head {
-  width: 352.5px;
-}
-body#index .home .main_column .of_the_month .box {
-  width: 352.5px;
-  margin-left: 2px;
-  padding-bottom: 0;
-}
-body#index .home .main_column .of_the_month .box li {
-  padding-bottom: 10px;
-}
 body#index .home .box {
   margin-bottom: 2px;
 }
@@ -1298,11 +1278,34 @@ body#index .home th {
   text-align: left;
   padding: 5px;
 }
+body#index .home .of_the_month {
+  margin-left: -2px;
+}
+body#index .home .of_the_month img.toolTip {
+  margin-left: -31.6px;
+  height: 550px;
+  width: 372.5px;
+  margin-top: -6px;
+}
+body#index .home .of_the_month .head {
+  width: 352.5px;
+}
+body#index .home .of_the_month .box {
+  width: 352.5px;
+  margin-left: 2px;
+  padding-bottom: 0;
+}
+body#index .home .of_the_month .box li {
+  padding-bottom: 10px;
+}
+body#index .home .of_the_month .box li:last-of-type {
+  margin: 4px;
+}
 body#index .home .of_the_month ul {
   font-size: 1.2em;
 }
 body#index .home .of_the_month b {
-  ont-size: 1.3em;
+  font-size: 1.3em;
 }
 body#index .home .month_rating {
   font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -1311,6 +1314,7 @@ body#index .home .month_rating {
   color: #7c7c7c;
   position: relative;
   top: -6px;
+  margin-left: 10px;
 }
 
 .home table,
@@ -1578,7 +1582,7 @@ input[value="Make Default"] {
 .torrent_table blockquote {
   margin: 10px;
   word-wrap: break-word;
-  width: 727px;
+  max-width: 727px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -4396,14 +4400,29 @@ div[style="background-image:url(https://cdn.broadcasthe.net/common/lumen/lumen_s
 }
 
 body#index #content > div.thin.home > div.main_column > div:last-child > ul {
-  text-align: center;
+  font-size: 0;
+  padding: 14px;
 }
 body#index #content > div.thin.home > div.main_column > div:last-child > ul div[style="float:left; width:285px;"] {
   float: none !important;
-  width: 220px !important;
+  width: 50% !important;
   display: inline-block;
   vertical-align: top;
   text-align: left;
+  font-size: 12px;
+}
+body#index #content > div.thin.home > div.main_column > div:last-child > ul div[style="float:left; width:285px;"]:first-child {
+  text-align: right;
+}
+body#index #content > div.thin.home > div.main_column > div:last-child > ul div[style="float:left; width:285px;"]:first-child li {
+  margin: 0 2.5em 0 0;
+}
+body#index #content > div.thin.home > div.main_column > div:last-child > ul div[style="float:left; width:285px;"]:nth-child(2) li {
+  margin: 0 0 0 2.5em;
+}
+body#index #content > div.thin.home > div.main_column > div:last-child > ul strong {
+  font-size: 1.2em;
+  text-decoration: underline;
 }
 
 div.pad.box[style="width: 100%"] {
