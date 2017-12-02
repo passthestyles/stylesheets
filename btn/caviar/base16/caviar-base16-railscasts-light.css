@@ -1733,6 +1733,10 @@ body#series #playbutton {
   left: 445.5px;
   opacity: 1;
 }
+body#series #trailer {
+  opacity: 1;
+  background-color: rgba(0,0,0,.9);
+}
 
 .group_torrent span,
 .torrent_table tr.group_torrent .year {
