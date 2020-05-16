@@ -1,7 +1,7 @@
 /*!
  * Theme Name:      Caviar [base16-default-dark]
- * Version:         1.5
- * Last Updated:    21 June 2017
+ * Version:         1.5.1
+ * Last Updated:    14 May 2020
  * Forum Thread:    /forums.php?action=viewthread&threadid=21795
  */
 /* External fonts */
@@ -98,7 +98,7 @@ select {
   cursor: pointer;
 }
 
-input[type="text"],
+input[type=text],
 textarea {
   cursor: text;
 }
@@ -130,9 +130,9 @@ textarea:focus {
 }
 
 button,
-input[type="button"],
-input[type="submit"],
-input[type="reset"] {
+input[type=button],
+input[type=submit],
+input[type=reset] {
   color: #282828;
   background-color: #e8e8e8;
   border: 1px solid #585858;
@@ -146,18 +146,18 @@ input[type="reset"] {
   transition: none;
 }
 button:hover, button:focus,
-input[type="button"]:hover,
-input[type="button"]:focus,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-input[type="reset"]:hover,
-input[type="reset"]:focus {
+input[type=button]:hover,
+input[type=button]:focus,
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=reset]:hover,
+input[type=reset]:focus {
   background-color: #dcc8c7;
 }
 button:active,
-input[type="button"]:active,
-input[type="submit"]:active,
-input[type="reset"]:active {
+input[type=button]:active,
+input[type=submit]:active,
+input[type=reset]:active {
   background-color: #dcc8c7;
   -webkit-transform: scale(0.93);
   -moz-transform: scale(0.93);
@@ -166,29 +166,29 @@ input[type="reset"]:active {
   transform: scale(0.93);
 }
 button:hover, button:focus, button:active,
-input[type="button"]:hover,
-input[type="button"]:focus,
-input[type="button"]:active,
-input[type="submit"]:hover,
-input[type="submit"]:focus,
-input[type="submit"]:active,
-input[type="reset"]:hover,
-input[type="reset"]:focus,
-input[type="reset"]:active {
+input[type=button]:hover,
+input[type=button]:focus,
+input[type=button]:active,
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=submit]:active,
+input[type=reset]:hover,
+input[type=reset]:focus,
+input[type=reset]:active {
   border-color: #695454;
   color: #282828;
 }
 button::-moz-focus-inner,
-input[type="button"]::-moz-focus-inner,
-input[type="submit"]::-moz-focus-inner,
-input[type="reset"]::-moz-focus-inner {
+input[type=button]::-moz-focus-inner,
+input[type=submit]::-moz-focus-inner,
+input[type=reset]::-moz-focus-inner {
   padding: 0 !important;
   border: 0 none !important;
 }
 button[disabled],
-input[type="button"][disabled],
-input[type="submit"][disabled],
-input[type="reset"][disabled] {
+input[type=button][disabled],
+input[type=submit][disabled],
+input[type=reset][disabled] {
   pointer-events: none;
   opacity: 0.5;
 }
@@ -233,23 +233,23 @@ tbody {
 
 body blockquote,
 body pre {
-  margin: 7px 0 ;
-  padding: 14px ;
-  border: 1px dashed #4c4c4c ;
+  margin: 7px 0;
+  padding: 14px;
+  border: 1px dashed #4c4c4c;
   color: #b8b8b8;
   background-color: #232323;
 }
 
 pre,
 .code {
-  margin: 7px 0 ;
-  padding: 14px ;
-  border: 1px dashed #4c4c4c ;
+  margin: 7px 0;
+  padding: 14px;
+  border: 1px dashed #4c4c4c;
   color: #b8b8b8;
   background-color: #232323;
   white-space: pre-wrap;
   font-family: "Roboto Mono", monospace;
-  font-size: 0.92857em;
+  font-size: 0.9285714286em;
 }
 pre br,
 .code br {
@@ -378,9 +378,11 @@ ul.thin li {
 #forums #content > div.thin > table tr.colhead_dark {
   border-bottom: none;
 }
+
 #requests #content > div.thin > table tr:not([class]) {
   border-bottom: none;
 }
+
 #content div.filter_torrents > h3 a {
   color: #f7ca88;
   -webkit-transition: none;
@@ -398,11 +400,9 @@ ul.thin li {
   text-align: center;
   padding: 10px;
   clear: both;
-  background-image: url("https://i.imgur.com/Zk8hP8q.png");
-  background-size: 0;
 }
 #footer > p:first-of-type::after {
-  content: " - Stylesheet: Caviar [base16-default-dark] v1.5";
+  content: " - Stylesheet: Caviar [base16-default-dark] v1.5.1";
   font-weight: 900;
 }
 #footer a {
@@ -556,6 +556,7 @@ td.colhead {
   padding-left: 5px;
   padding-right: 5px;
 }
+
 .colhead_dark, tbody .colhead_dark {
   color: #d8d8d8;
   background: #383838;
@@ -630,7 +631,7 @@ tbody .colhead_dark strong {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.lightbox input[type="button"] {
+.lightbox input[type=button] {
   margin: 2px;
 }
 
@@ -776,7 +777,7 @@ body#requests #quickreplypreview {
   display: inline-block;
   line-height: 1.4em;
   vertical-align: middle;
-  margin: 0 .1em;
+  margin: 0 0.1em;
   padding: 2px;
 }
 
@@ -860,7 +861,7 @@ body div#DonInfo {
   position: relative;
   width: 50px;
   height: 45px;
-  font-size: .75em;
+  font-size: 0.75em;
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-weight: 400;
   z-index: 1;
@@ -1004,7 +1005,7 @@ li.potato-menu-has-vertical:nth-of-type(7) .potato-menu-group .potato-menu-item 
   font-size: 0;
 }
 #nav_bonus > a::before {
-  content: 'Points Store';
+  content: "Points Store";
   pointer-events: none;
   font-size: 13px;
   width: 143px;
@@ -1021,7 +1022,7 @@ li.potato-menu-has-vertical:nth-of-type(7) .potato-menu-group .potato-menu-item 
   background: linear-gradient(to right, #ab4642, #dc9656, #f7ca88, #a1b56c, #86c1b9, #7cafc2, #ba8baf);
   text-align: center;
   color: #282828;
-  font-size: .8em;
+  font-size: 0.8em;
   margin: 2px 0;
   padding: 9px 0;
   vertical-align: middle;
@@ -1161,7 +1162,7 @@ li.ui-state-hover {
 .newmem {
   background-color: #222222;
   text-align: center;
-  font-size: .95em;
+  font-size: 0.95em;
   margin: 0 auto;
   padding: 5px;
 }
@@ -1185,9 +1186,9 @@ li.ui-state-hover {
   background-image: none !important;
 }
 
-.ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-state-focus, .ui-widget-content
-.ui-state-hover, .ui-widget-header
-.ui-state-hover,
+.ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus, .ui-state-focus,
+.ui-widget-content .ui-state-hover,
+.ui-widget-header .ui-state-hover,
 .ui-state-hover {
   background: #f7ca88 !important;
   color: #282828 !important;
@@ -1357,7 +1358,7 @@ body#torrents .thin > h2 a img {
   width: 1001px;
   margin-top: -5px;
 }
-body#torrents .center.thin input[type="submit"] {
+body#torrents .center.thin input[type=submit] {
   margin-top: 10px;
 }
 body#torrents .sidebar table.box {
@@ -1374,7 +1375,7 @@ body#torrents .sidebar .box > p a img {
   margin-top: -10px;
   margin-bottom: -20px;
 }
-body#torrents .sidebar form input[type="text"] {
+body#torrents .sidebar form input[type=text] {
   width: 200px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1424,7 +1425,7 @@ body#torrents .colhead td[style="text-align:right"] {
 }
 
 input[value="Make Default"] {
-  margin-left: -.6em;
+  margin-left: -0.6em;
 }
 
 .filter_torrents {
@@ -1562,8 +1563,8 @@ input[value="Make Default"] {
 .torrent_table tbody > .pad {
   padding: 0;
 }
-#torrents .torrent_table tbody .pad > td, #torrents
-.torrent_table tbody > .pad {
+#torrents .torrent_table tbody .pad > td,
+#torrents .torrent_table tbody > .pad {
   padding: 0;
 }
 .torrent_table .colhead_dark {
@@ -1689,8 +1690,8 @@ body#series .sidebar .box object[width="230"] > embed {
   position: relative;
   left: -4px;
 }
-body#series .sidebar .box input[name="topicid"],
-body#series .sidebar .box input[name="youtube"] {
+body#series .sidebar .box input[name=topicid],
+body#series .sidebar .box input[name=youtube] {
   width: 200px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1723,7 +1724,7 @@ body#series #addtrailer .head {
 body#series #addtrailer button {
   margin-top: 10px;
 }
-body#series #addtrailer input[type="text"] {
+body#series #addtrailer input[type=text] {
   width: 369px;
   margin: 10px 3px 0 0;
 }
@@ -1784,13 +1785,13 @@ div.rating-bg {
 
 .ui-widget-overlay {
   background: #181818 !important;
-  opacity: .5 !important;
+  opacity: 0.5 !important;
 }
 
 .ui-widget-content {
   border: none !important;
   background: #282828 !important;
-  font-size: .9em !important;
+  font-size: 0.9em !important;
   color: #b8b8b8 !important;
   padding: 0 !important;
 }
@@ -1822,9 +1823,9 @@ div.rating-bg {
   margin-top: 4px !important;
 }
 
-.ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, .ui-state-active, .ui-widget-content
-.ui-tabs-selected, .ui-widget-header
-.ui-tabs-selected,
+.ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, .ui-state-active,
+.ui-widget-content .ui-tabs-selected,
+.ui-widget-header .ui-tabs-selected,
 .ui-tabs-selected {
   background: #f7ca88 !important;
   color: #282828 !important;
@@ -1988,7 +1989,7 @@ body#reviews thead tr a:hover, body#reviews thead tr a:focus, body#reviews thead
 body#reviews form[action="reviews.php"] {
   padding: 10px;
 }
-body#reviews form[action="reviews.php"] input[name="seriesid"] {
+body#reviews form[action="reviews.php"] input[name=seriesid] {
   margin-bottom: 10px;
 }
 body#reviews form[action="reviews.php"] textarea {
@@ -2014,21 +2015,21 @@ body#reviews form[action="reviews.php"] textarea {
 .forum_post td[colspan="2"] {
   vertical-align: middle;
 }
-.forum_post td.body textarea[id^="editbox"] {
+.forum_post td.body textarea[id^=editbox] {
   width: 100%;
   position: relative;
   top: -11px;
   left: -10px;
 }
-.forum_post td.body div[id^="preview"] {
+.forum_post td.body div[id^=preview] {
   margin-bottom: 11px;
   min-height: 181px;
   word-wrap: break-word;
 }
-.forum_post td.body div[id^="preview"]:empty {
+.forum_post td.body div[id^=preview]:empty {
   display: none;
 }
-.forum_post td.body > span[id^="bar"] > input {
+.forum_post td.body > span[id^=bar] > input {
   min-width: 60px;
 }
 .forum_post .colhead_dark td {
@@ -2085,7 +2086,7 @@ body#userhistory td.avatar {
 .signature {
   border-top: 1px solid #4c4c4c;
   margin: 2em 0 0;
-  padding: .5em 0 0;
+  padding: 0.5em 0 0;
 }
 
 .lastedited {
@@ -2396,8 +2397,8 @@ body#user #section1 > .profile > .pad {
 #userform textarea {
   font-size: 1em;
 }
-#userform input[type="text"],
-#userform input[type="password"],
+#userform input[type=text],
+#userform input[type=password],
 #userform textarea {
   width: 380px;
 }
@@ -2412,6 +2413,7 @@ ul .invitetree {
 
 #invitetree {
   padding: 10px;
+  text-align: left;
 }
 
 /* Inboxes */
@@ -2420,15 +2422,14 @@ body#staffpm #content > .thin > .box.pad {
   padding: 0;
   background: none;
 }
-body#inbox #content > .thin > .box.pad input[type="submit"],
-body#staffpm #content > .thin > .box.pad input[type="submit"] {
+body#inbox #content > .thin > .box.pad input[type=submit],
+body#staffpm #content > .thin > .box.pad input[type=submit] {
   margin-top: 10px;
 }
 body#inbox .head,
 body#staffpm .head {
   margin-right: -10px;
 }
-
 body#inbox #quickreplypreview {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2445,8 +2446,8 @@ form[action="inbox.php"] .box.pad.center {
 form[action="inbox.php"] .box.pad table {
   background: initial;
 }
-form[action="inbox.php"] input[name="subject"],
-form[action="inbox.php"] textarea[name="body"] {
+form[action="inbox.php"] input[name=subject],
+form[action="inbox.php"] textarea[name=body] {
   margin: 10px 0;
   width: 100%;
   -webkit-box-sizing: border-box;
@@ -2751,17 +2752,17 @@ body div.contenth textarea:focus {
   width: 800px;
   margin-left: auto;
   margin-right: auto;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 .tickets_categories {
   float: left;
   text-align: left;
-  padding: .5em;
+  padding: 0.5em;
 }
 .tickets_status {
   float: right;
   text-align: left;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 .small_label {
@@ -2863,7 +2864,7 @@ div#twitter h2 {
   font-size: 1.1em;
   color: #282828;
   margin: 0;
-  padding: .4em 1em;
+  padding: 0.4em 1em;
 }
 
 p#preloader {
@@ -2874,12 +2875,12 @@ p#preloader {
 ul#twitter_update_list {
   list-style-type: none;
   margin: 0;
-  padding: 0 1em .5em;
+  padding: 0 1em 0.5em;
 }
 ul#twitter_update_list li {
   border-bottom: 1px solid #ccc;
   margin: 0;
-  padding: .8em 0 1em;
+  padding: 0.8em 0 1em;
 }
 ul#twitter_update_list li.lastTweet {
   border-bottom: none;
@@ -2892,7 +2893,7 @@ ul#twitter_update_list li span {
   display: block;
   color: #282828;
   border-top: 1px solid #ccc;
-  padding: .3em 1em;
+  padding: 0.3em 1em;
 }
 
 div#gift {
@@ -2997,7 +2998,7 @@ body#tvnews .head {
 body#tvnews .sidebar {
   margin-top: 25px;
 }
-body#tvnews .sidebar form input[type="text"] {
+body#tvnews .sidebar form input[type=text] {
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3050,7 +3051,7 @@ body#collages .sidebar > .box:first-child > .pad {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-body#collages .sidebar textarea[name="body"] {
+body#collages .sidebar textarea[name=body] {
   margin-top: 10px;
   font-size: 12px;
   width: 100%;
@@ -3058,13 +3059,13 @@ body#collages .sidebar textarea[name="body"] {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-body#collages .sidebar form > input[type="text"] {
+body#collages .sidebar form > input[type=text] {
   width: 200px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-body#collages .sidebar img[title="Preview"] {
+body#collages .sidebar img[title=Preview] {
   max-width: 100%;
   height: auto;
 }
@@ -3092,7 +3093,7 @@ body#recommend .thin > .box > table tr:nth-child(n+2) td:nth-child(4) {
   position: relative;
 }
 body#recommend .thin > .box > table tr:nth-child(n+2) td:nth-child(4)::before {
-  content: 'i';
+  content: "i";
   position: absolute;
   width: 16px;
   height: 16px;
@@ -3128,7 +3129,7 @@ body#recommend #info_dialog a:hover, body#recommend #info_dialog a:focus, body#r
 body#recommend > .ui-widget-content {
   box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.25);
 }
-body#recommend select[name="rating"] {
+body#recommend select[name=rating] {
   height: 13em;
   width: 5em;
 }
@@ -3236,7 +3237,7 @@ body#actor .sidebar > .box > table tr:first-child {
   color: #d8d8d8;
 }
 body#actor .sidebar > .box > table tr:nth-child(n+2) {
-  font-size: .8em;
+  font-size: 0.8em;
   background-color: #232323;
 }
 body#actor .sidebar > .box > table tr:nth-child(n+2) td {
@@ -3330,7 +3331,7 @@ body#staffpm #compose {
   margin-bottom: 10px;
   padding: 10px 20px;
 }
-body#staffpm #compose input[type="text"],
+body#staffpm #compose input[type=text],
 body#staffpm #compose textarea {
   margin: 10px 0;
   width: 100%;
@@ -3357,7 +3358,7 @@ body#store #content > div {
   position: initial;
 }
 body#store #extra6::before {
-  content: 'Lumens Store';
+  content: "Lumens Store";
   position: absolute;
   font-size: 40px;
   bottom: 621px;
@@ -3444,7 +3445,7 @@ body#irc td {
 body#kb .sidebar .box.pad {
   margin-top: 2px;
 }
-body#kb .sidebar form input[type="text"] {
+body#kb .sidebar form input[type=text] {
   width: 174px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3627,15 +3628,15 @@ img[src$="/common/icons/DownVote.png"] {
   filter: none;
 }
 
-img[title="Snatches"],
-img[title="Seeders"],
-img[title="Leechers"],
+img[title=Snatches],
+img[title=Seeders],
+img[title=Leechers],
 img[src$="/common/icons/page_copy.png"],
 img[src$="/common/icons/comment_edit.png"] {
-  -webkit-filter: brightness(84.70588%);
-  -moz-filter: brightness(84.70588%);
-  -o-filter: brightness(84.70588%);
-  filter: brightness(84.70588%);
+  -webkit-filter: brightness(84.7058823529%);
+  -moz-filter: brightness(84.7058823529%);
+  -o-filter: brightness(84.7058823529%);
+  filter: brightness(84.7058823529%);
 }
 
 img[src$="/common/icons/picture.png"],
@@ -3643,10 +3644,10 @@ img[src$="/common/icons/pm.gif"],
 img[src$="/common/icons/user_go.png"],
 img[src$="/common/icons/locked.png"],
 img[title="Go to last read post"] {
-  -webkit-filter: brightness(72.15686%);
-  -moz-filter: brightness(72.15686%);
-  -o-filter: brightness(72.15686%);
-  filter: brightness(72.15686%);
+  -webkit-filter: brightness(72.1568627451%);
+  -moz-filter: brightness(72.1568627451%);
+  -o-filter: brightness(72.1568627451%);
+  filter: brightness(72.1568627451%);
 }
 
 img[src$="/common/icons/sticky.png"] {
@@ -3656,31 +3657,34 @@ img[src$="/common/icons/sticky.png"] {
   filter: none;
 }
 
-img[title="Snatches"] {
+img[title=Snatches] {
   background-image: url("https://i.imgur.com/F6Wn37P.png");
   background-repeat: no-repeat;
   background-size: 15px 15px;
   height: 15px;
   padding-left: 15px;
   width: 0;
+  content: url("https://i.imgur.com/F6Wn37P.png");
 }
 
-img[title="Seeders"] {
+img[title=Seeders] {
   background-image: url("https://i.imgur.com/ldPfE7x.png");
   background-repeat: no-repeat;
   background-size: 11px 15px;
   height: 15px;
   padding-left: 11px;
   width: 0;
+  content: url("https://i.imgur.com/ldPfE7x.png");
 }
 
-img[title="Leechers"] {
+img[title=Leechers] {
   background-image: url("https://i.imgur.com/cA3DKwn.png");
   background-repeat: no-repeat;
   background-size: 11px 15px;
   height: 15px;
   padding-left: 11px;
   width: 0;
+  content: url("https://i.imgur.com/cA3DKwn.png");
 }
 
 img[src$="/common/icons/on.png"] {
@@ -3728,7 +3732,7 @@ img[src$="/common/icons/user_go.png"] {
   width: 0;
 }
 
-img[title="Unread"] {
+img[title=Unread] {
   background-image: url("https://i.imgur.com/XDOrCea.png");
   background-repeat: no-repeat;
   background-size: 47px 35px;
@@ -3741,7 +3745,7 @@ img[title="Unread"] {
   filter: hue-rotate(75deg) saturate(37%) brightness(268%);
 }
 
-img[title="Read"] {
+img[title=Read] {
   background-image: url("https://i.imgur.com/XDOrCea.png");
   background-repeat: no-repeat;
   background-size: 47px 35px;
@@ -3799,10 +3803,10 @@ img[title="Go to last read post"] {
   width: 0;
 }
 table.forum_post .colhead_dark img[title="Go to last read post"] {
-  -webkit-filter: brightness(84.70588%);
-  -moz-filter: brightness(84.70588%);
-  -o-filter: brightness(84.70588%);
-  filter: brightness(84.70588%);
+  -webkit-filter: brightness(84.7058823529%);
+  -moz-filter: brightness(84.7058823529%);
+  -o-filter: brightness(84.7058823529%);
+  filter: brightness(84.7058823529%);
 }
 
 img[src$="/tablesorter.com/addons/pager/icons/first.png"] {
@@ -3859,52 +3863,55 @@ img[src$="/common/symbols/rss.png"] {
   width: 0;
 }
 
-#torrents img[title="Snatches"] {
+#torrents img[title=Snatches] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-filter: brightness(84.70588%);
-  -moz-filter: brightness(84.70588%);
-  -o-filter: brightness(84.70588%);
-  filter: brightness(84.70588%);
+  -webkit-filter: brightness(84.7058823529%);
+  -moz-filter: brightness(84.7058823529%);
+  -o-filter: brightness(84.7058823529%);
+  filter: brightness(84.7058823529%);
   display: block;
   background: url("https://i.imgur.com/F6Wn37P.png") no-repeat;
   height: 15px;
   padding-right: 15px;
   width: 15px;
   font-size: 0;
+  content: url("https://i.imgur.com/F6Wn37P.png");
 }
 
-#torrents img[title="Seeders"] {
+#torrents img[title=Seeders] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-filter: brightness(84.70588%);
-  -moz-filter: brightness(84.70588%);
-  -o-filter: brightness(84.70588%);
-  filter: brightness(84.70588%);
+  -webkit-filter: brightness(84.7058823529%);
+  -moz-filter: brightness(84.7058823529%);
+  -o-filter: brightness(84.7058823529%);
+  filter: brightness(84.7058823529%);
   display: block;
   background: url("https://i.imgur.com/ldPfE7x.png") no-repeat;
   height: 15px;
   padding-right: 15px;
   width: 15px;
   font-size: 0;
+  content: url("https://i.imgur.com/ldPfE7x.png");
 }
 
-#torrents img[title="Leechers"] {
+#torrents img[title=Leechers] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-filter: brightness(84.70588%);
-  -moz-filter: brightness(84.70588%);
-  -o-filter: brightness(84.70588%);
-  filter: brightness(84.70588%);
+  -webkit-filter: brightness(84.7058823529%);
+  -moz-filter: brightness(84.7058823529%);
+  -o-filter: brightness(84.7058823529%);
+  filter: brightness(84.7058823529%);
   display: block;
   background: url("https://i.imgur.com/cA3DKwn.png") no-repeat;
   height: 15px;
   padding-right: 15px;
   width: 15px;
   font-size: 0;
+  content: url("https://i.imgur.com/cA3DKwn.png");
 }
 
 img[alt="Default avatar"] {
@@ -4109,14 +4116,14 @@ body a.permission_15, body .permission_15 {
   font-style: italic;
 }
 
-a[class^="permission_"],
-a > span[class^="permission_"] {
+a[class^=permission_],
+a > span[class^=permission_] {
   text-decoration: none;
 }
-a[class^="permission_"]:hover, a[class^="permission_"]:focus, a[class^="permission_"]:active,
-a > span[class^="permission_"]:hover,
-a > span[class^="permission_"]:focus,
-a > span[class^="permission_"]:active {
+a[class^=permission_]:hover, a[class^=permission_]:focus, a[class^=permission_]:active,
+a > span[class^=permission_]:hover,
+a > span[class^=permission_]:focus,
+a > span[class^=permission_]:active {
   text-decoration: underline;
 }
 
@@ -4271,8 +4278,7 @@ a > span[class^="permission_"]:active {
   color: #a1b56c !important;
 }
 
-.None,
-.\0D\0D\0D {
+.None {
   color: #7cafc2 !important;
 }
 
@@ -4296,7 +4302,6 @@ a:hover .M4V,
 a:hover .MPEG,
 a:hover .Internal,
 a:hover .None,
-a:hover .\0D\0D\0D,
 a:hover .P2P,
 a:hover .Scene,
 a:hover .User,
@@ -4308,7 +4313,6 @@ a:focus .M4V,
 a:focus .MPEG,
 a:focus .Internal,
 a:focus .None,
-a:focus .\0D\0D\0D,
 a:focus .P2P,
 a:focus .Scene,
 a:focus .User,
@@ -4320,57 +4324,53 @@ a:active .M4V,
 a:active .MPEG,
 a:active .Internal,
 a:active .None,
-a:active .\0D\0D\0D,
 a:active .P2P,
 a:active .Scene,
 a:active .User {
   color: #86c1b9 !important;
 }
-.discog a:hover .TS, .discog
-a:hover .MP4, .discog
-a:hover .MKV, .discog
-a:hover .AVI, .discog
-a:hover .M4V, .discog
-a:hover .MPEG, .discog
-a:hover .Internal, .discog
-a:hover .None, .discog
-a:hover .\0D\0D\0D, .discog
-a:hover .P2P, .discog
-a:hover .Scene, .discog
-a:hover .User, .discog
-a:focus .TS, .discog
-a:focus .MP4, .discog
-a:focus .MKV, .discog
-a:focus .AVI, .discog
-a:focus .M4V, .discog
-a:focus .MPEG, .discog
-a:focus .Internal, .discog
-a:focus .None, .discog
-a:focus .\0D\0D\0D, .discog
-a:focus .P2P, .discog
-a:focus .Scene, .discog
-a:focus .User, .discog
-a:active .TS, .discog
-a:active .MP4, .discog
-a:active .MKV, .discog
-a:active .AVI, .discog
-a:active .M4V, .discog
-a:active .MPEG, .discog
-a:active .Internal, .discog
-a:active .None, .discog
-a:active .\0D\0D\0D, .discog
-a:active .P2P, .discog
-a:active .Scene, .discog
-a:active .User {
+.discog a:hover .TS,
+.discog a:hover .MP4,
+.discog a:hover .MKV,
+.discog a:hover .AVI,
+.discog a:hover .M4V,
+.discog a:hover .MPEG,
+.discog a:hover .Internal,
+.discog a:hover .None,
+.discog a:hover .P2P,
+.discog a:hover .Scene,
+.discog a:hover .User,
+.discog a:focus .TS,
+.discog a:focus .MP4,
+.discog a:focus .MKV,
+.discog a:focus .AVI,
+.discog a:focus .M4V,
+.discog a:focus .MPEG,
+.discog a:focus .Internal,
+.discog a:focus .None,
+.discog a:focus .P2P,
+.discog a:focus .Scene,
+.discog a:focus .User,
+.discog a:active .TS,
+.discog a:active .MP4,
+.discog a:active .MKV,
+.discog a:active .AVI,
+.discog a:active .M4V,
+.discog a:active .MPEG,
+.discog a:active .Internal,
+.discog a:active .None,
+.discog a:active .P2P,
+.discog a:active .Scene,
+.discog a:active .User {
   color: #86c1b9 !important;
 }
 
 /* Shame - This CSS is bad, and you should feel bad */
-.alertbar[style='border:1px solid #32506e !important;background-color:#00254A !important;margin-bottom:3px !important;color:#CCC !important;'] span {
+.alertbar[style="border:1px solid #32506e !important;background-color:#00254A !important;margin-bottom:3px !important;color:#CCC !important;"] span {
   color: #282828 !important;
   position: relative;
 }
-.alertbar[style='border:1px solid #32506e !important;background-color:#00254A !important;margin-bottom:3px !important;color:#CCC !important;']::before {
+.alertbar[style="border:1px solid #32506e !important;background-color:#00254A !important;margin-bottom:3px !important;color:#CCC !important;"]::before {
   content: "";
   position: absolute;
   top: -1px;
@@ -4499,7 +4499,7 @@ body#user #content > .thin > form[action="user.php"] td {
   padding: 10px;
 }
 body#user #content > .thin > form[action="user.php"] td.label + td > textarea,
-body#user #content > .thin > form[action="user.php"] td.label + td > input[type="text"] {
+body#user #content > .thin > form[action="user.php"] td.label + td > input[type=text] {
   width: 662px !important;
 }
 
