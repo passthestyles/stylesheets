@@ -402,7 +402,7 @@ ul.thin li {
   clear: both;
 }
 #footer > p:first-of-type::after {
-  content: " - Stylesheet: Orange Caviar v1.5.1";
+  content: " - Stylesheet: Orange Caviar v1.6";
   font-weight: 900;
 }
 #footer a {

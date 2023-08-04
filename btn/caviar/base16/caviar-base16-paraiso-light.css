@@ -402,7 +402,7 @@ ul.thin li {
   clear: both;
 }
 #footer > p:first-of-type::after {
-  content: " - Stylesheet: Caviar [base16-paraiso-light] v1.5.1";
+  content: " - Stylesheet: Caviar [base16-paraiso-light] v1.6";
   font-weight: 900;
 }
 #footer a {
