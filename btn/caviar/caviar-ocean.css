@@ -1,7 +1,7 @@
 /*!
  * Theme Name:      Ocean Caviar
- * Version:         1.5.1
- * Last Updated:    14 May 2020
+ * Version:         1.6
+ * Last Updated:    3 August 2023
  * Forum Thread:    /forums.php?action=viewthread&threadid=21795
  */
 /* External fonts */
@@ -935,7 +935,6 @@ ul.potato-menu li.potato-menu-item {
 }
 ul.potato-menu ul.potato-menu-group {
   position: absolute;
-  display: none;
   z-index: 1000;
   text-align: left;
   margin: 0;
@@ -952,52 +951,52 @@ ul.potato-menu ul.potato-menu-group a {
   padding: 0 10px !important;
 }
 
-li.potato-menu-has-vertical:nth-of-type(1) a {
+.potato-menu > li.potato-menu-item:nth-of-type(1) a {
   background: #222427;
 }
-li.potato-menu-has-vertical:nth-of-type(1) .potato-menu-group .potato-menu-item a:hover {
+.potato-menu > li.potato-menu-item:nth-of-type(1) .potato-menu-group .potato-menu-item a:hover {
   background: #383737;
 }
 
-li.potato-menu-has-vertical:nth-of-type(2) a {
+.potato-menu > li.potato-menu-item:nth-of-type(2) a {
   background: #25272a;
 }
-li.potato-menu-has-vertical:nth-of-type(2) .potato-menu-group .potato-menu-item a:hover {
+.potato-menu > li.potato-menu-item:nth-of-type(2) .potato-menu-group .potato-menu-item a:hover {
   background: #3b3939;
 }
 
-li.potato-menu-has-vertical:nth-of-type(3) a {
+.potato-menu > li.potato-menu-item:nth-of-type(3) a {
   background: #282a2d;
 }
-li.potato-menu-has-vertical:nth-of-type(3) .potato-menu-group .potato-menu-item a:hover {
+.potato-menu > li.potato-menu-item:nth-of-type(3) .potato-menu-group .potato-menu-item a:hover {
   background: #3d3c3c;
 }
 
-li.potato-menu-has-vertical:nth-of-type(4) a {
+.potato-menu > li.potato-menu-item:nth-of-type(4) a {
   background: #2b2d31;
 }
-li.potato-menu-has-vertical:nth-of-type(4) .potato-menu-group .potato-menu-item a:hover {
+.potato-menu > li.potato-menu-item:nth-of-type(4) .potato-menu-group .potato-menu-item a:hover {
   background: #403e3f;
 }
 
-li.potato-menu-has-vertical:nth-of-type(5) a {
+.potato-menu > li.potato-menu-item:nth-of-type(5) a {
   background: #2d2f34;
 }
-li.potato-menu-has-vertical:nth-of-type(5) .potato-menu-group .potato-menu-item a:hover {
+.potato-menu > li.potato-menu-item:nth-of-type(5) .potato-menu-group .potato-menu-item a:hover {
   background: #414041;
 }
 
-li.potato-menu-has-vertical:nth-of-type(6) a {
+.potato-menu > li.potato-menu-item:nth-of-type(6) a {
   background: #303237;
 }
-li.potato-menu-has-vertical:nth-of-type(6) .potato-menu-group .potato-menu-item a:hover {
+.potato-menu > li.potato-menu-item:nth-of-type(6) .potato-menu-group .potato-menu-item a:hover {
   background: #444244;
 }
 
-li.potato-menu-has-vertical:nth-of-type(7) a {
+.potato-menu > li.potato-menu-item:nth-of-type(7) a {
   background: #33353a;
 }
-li.potato-menu-has-vertical:nth-of-type(7) .potato-menu-group .potato-menu-item a:hover {
+.potato-menu > li.potato-menu-item:nth-of-type(7) .potato-menu-group .potato-menu-item a:hover {
   background: #464546;
 }
 
