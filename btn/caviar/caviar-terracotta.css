@@ -2859,7 +2859,7 @@ a.tab#selected {
 }
 
 .sidebar .box .nobullet img {
-  width: initial;
+  width: 100%;
   margin: initial;
 }
 
