@@ -2858,8 +2858,13 @@ a.tab#selected {
   margin-right: 19px;
 }
 
-.sidebar .box .nobullet img {
+.sidebar .box #last_uploads .nobullet img {
   width: 100%;
+  margin: initial;
+}
+
+.sidebar .box .nobullet img {
+  width: initial;
   margin: initial;
 }
 
