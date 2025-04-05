@@ -1,7 +1,7 @@
 /*!
  * Theme Name:      Caviar [base16-brewer-light]
- * Version:         1.6
- * Last Updated:    3 August 2023
+ * Version:         1.6.1
+ * Last Updated:    5 April 2025
  * Forum Thread:    /forums.php?action=viewthread&threadid=35477
  */
 /* External fonts */
@@ -796,6 +796,15 @@ body#requests #quickreplypreview {
 }
 #userinfo_stats .stat {
   color: #0c0d0e;
+}
+
+body:has(input#invite_rules_accept) #userinfo #userinfo_major {
+	display: block;
+	float: right;
+	margin-top: 7px;
+}
+body:has(input#invite_rules_accept) #userinfo #userinfo_major li:nth-child(odd) {
+	display:none;
 }
 
 #userinfo_major,
