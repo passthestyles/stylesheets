@@ -1,0 +1,19 @@
+/* Search Links */
+div.PTP-FF-SearchLinks {
+    margin-bottom: 8px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+/* SearchLinks: Text */
+a.PTP-FF-SearchLink {
+    margin-right: .5em;
+    font-size: 14px;
+}
+
+/* SearchLinks: Images */
+a.PTP-FF-SearchLink > img {
+    max-width: 18px;
+    max-height: 18px;
+    margin-right: .5em;
+}
